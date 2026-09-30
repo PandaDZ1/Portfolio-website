@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #606c38;
+  --color-secondary: #283618;
+  --color-light: #fefae0;
+  --color-accent: #dda15e;
+  --color-accent-dark: #bc6c25;
+}
+
+@utility glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: var(--color-light);
+  color: var(--color-secondary);
+  scroll-behavior: smooth;
+}
+
+/* Hide scrollbar */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Seamless Marquee Animation */
+@keyframes marquee {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-marquee {
+  animation: marquee 20s linear infinite;
+  display: flex;
+  width: max-content;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
