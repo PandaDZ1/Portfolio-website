@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 @import "tailwindcss";
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
   --color-primary: #606c38;
   --color-secondary: #283618;
@@ -21,9 +23,15 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   font-family: 'JetBrains Mono', monospace;
-  background-color: var(--color-light);
-  color: var(--color-secondary);
+  background-color: #fefae0;
+  color: #283618;
   scroll-behavior: smooth;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+html.dark {
+  background-color: #151c11;
+  color: #fefae0;
 }
 
 /* Hide scrollbar */

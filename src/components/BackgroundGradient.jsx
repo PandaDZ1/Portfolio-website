@@ -6,7 +6,7 @@ import * as fiber from '@react-three/fiber';
 
 export default function BackgroundGradient() {
   return (
-    <div className="absolute inset-0 z-0 overflow-hidden bg-[#fefae0]">
+    <div className="absolute inset-0 z-0 overflow-hidden bg-[#fefae0] dark:bg-[#151c11] transition-colors duration-500">
       <ShaderGradientCanvas
         importedFiber={{ ...fiber, ...drei, ...reactSpring }}
         style={{
@@ -60,7 +60,7 @@ export default function BackgroundGradient() {
           wireframe={false}
         />
       </ShaderGradientCanvas>
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fefae0] z-0"></div>
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#fefae0] dark:to-[#151c11] z-0 transition-colors duration-500"></div>
     </div>
   );
 }

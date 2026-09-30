@@ -27,10 +27,9 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-24 relative overflow-hidden">
-      {/* Background with multiple gradient blobs for a "greener scene" */}
-      <div className="absolute inset-0 bg-[#283618] z-0"></div>
-      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-40">
+    <section id="services" className="py-24 relative overflow-hidden bg-[#283618] dark:bg-[#0f150c] transition-colors duration-500">
+      {/* Background with multiple gradient blobs */}
+      <div className="absolute top-0 left-0 w-full h-full overflow-hidden z-0 opacity-40 pointer-events-none">
         <div className="absolute -top-[20%] -left-[10%] w-[50%] h-[50%] rounded-full bg-[#606c38] blur-[120px]"></div>
         <div className="absolute top-[40%] right-[10%] w-[40%] h-[40%] rounded-full bg-[#dda15e] blur-[150px] opacity-20"></div>
         <div className="absolute -bottom-[20%] left-[20%] w-[60%] h-[60%] rounded-full bg-[#3a4d23] blur-[100px]"></div>
@@ -44,6 +43,9 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
+          <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#dda15e] mb-2 block font-mono">
+            Capabilities
+          </span>
           <h2 className="text-6xl font-bold text-[#fefae0] mb-6" style={{ fontFamily: "'Caveat', cursive" }}>
             My Services
           </h2>
@@ -60,7 +62,7 @@ export default function Services() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="group bg-[#fefae0]/10 backdrop-blur-xl border border-[#fefae0]/20 p-8 rounded-3xl hover:bg-[#fefae0]/20 transition-all duration-300 transform hover:-translate-y-3 shadow-2xl"
+              className="group bg-[#fefae0]/10 dark:bg-[#172213] backdrop-blur-xl border border-[#fefae0]/20 dark:border-[#dda15e]/20 p-8 rounded-3xl hover:bg-[#fefae0]/20 dark:hover:bg-[#1f2d19] transition-all duration-300 transform hover:-translate-y-3 shadow-2xl"
             >
               <div className="mb-6 p-4 inline-block bg-[#fefae0]/10 rounded-2xl border border-[#fefae0]/10 group-hover:scale-110 transition-transform duration-300">
                 {service.icon}

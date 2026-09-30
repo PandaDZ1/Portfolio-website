@@ -16,14 +16,23 @@ import {
   CheckCircle2, 
   Lock, 
   FileText, 
-  GraduationCap 
+  GraduationCap,
+  User,
+  Calendar,
+  Globe,
+  Briefcase
 } from 'lucide-react';
+import Navbar from './Navbar';
 
 const projectData = {
   binaqar: {
     id: 'binaqar',
     title: 'Bin Aqar Platform',
     subtitle: 'A Full-Scale Saudi Real Estate Marketplace & Custom CRM',
+    client: 'Riyad Moussa',
+    date: 'Avril 2026',
+    website: 'https://binaqar.com/',
+    serviceType: 'Real Estate Marketplace & Custom CRM',
     thumbnail: '/projects/binaqar/homepage.png',
     link: 'https://binaqar.com/',
     role: 'Lead Full-Stack Developer & System Architect',
@@ -120,8 +129,12 @@ const projectData = {
     id: 'wazayefksa',
     title: 'Wazayefksa Job Board',
     subtitle: 'A Comprehensive AI-Powered Saudi Job Platform',
+    client: 'ALSAHLI, KHUZAYYIM ALHUMAIDA K',
+    date: 'December 2025',
+    website: 'https://wazayefksa.com',
+    serviceType: 'AI Recruitment Platform & Web Development',
     thumbnail: '/projects/wazayefksa/Screenshot 2026-07-19 020501.png',
-    link: '#',
+    link: 'https://wazayefksa.com',
     role: 'Full-Stack Developer & AI Automation Engineer',
     stats: [
       { label: 'First 30 Days Traffic', value: '20,000+ Visits', icon: TrendingUp },
@@ -206,8 +219,12 @@ const projectData = {
     id: 'algerietelecom',
     title: 'Centralized Software Deployment Platform',
     subtitle: 'Automated Software Distribution & Workstation Management System for Algérie Télécom',
+    client: 'Algérie Télécom',
+    date: 'Juin 2026',
+    website: 'https://www.algerietelecom.dz/',
+    serviceType: 'Centralized Enterprise Software Deployment & System Architecture',
     thumbnail: '/projects/algerietelecom/photo_2026-05-05_00-41-20.jpg',
-    link: '#',
+    link: 'https://www.algerietelecom.dz/',
     role: 'Lead System Architect & Full-Stack Developer (Final Year PFE Capstone)',
     stats: [
       { label: 'Host Organization', value: 'Algérie Télécom', icon: ShieldCheck },
@@ -343,19 +360,21 @@ export default function ProjectDetail() {
 
   if (!project) {
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-[#fefae0] px-4">
-        <h1 className="text-4xl font-bold text-[#283618] mb-4">Project not found</h1>
+      <div className="min-h-screen flex flex-col items-center justify-center bg-[#fefae0] dark:bg-[#151c11] px-4 transition-colors">
+        <h1 className="text-4xl font-bold text-[#283618] dark:text-[#fefae0] mb-4">Project not found</h1>
         <Link to="/" className="text-[#dda15e] font-bold underline">Back to Home</Link>
       </div>
     );
   }
 
   return (
-    <div className="min-h-screen bg-[#fefae0] pt-28 pb-24 px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-[#fefae0] dark:bg-[#151c11] text-[#283618] dark:text-[#fefae0] pt-28 pb-24 px-4 sm:px-6 lg:px-8 transition-colors duration-500">
+      <Navbar />
+
       <div className="max-w-5xl mx-auto">
         <Link 
           to="/#projects" 
-          className="inline-flex items-center gap-2 text-[#283618] hover:text-[#dda15e] font-bold mb-8 transition-colors text-base group"
+          className="inline-flex items-center gap-2 text-[#283618] dark:text-[#dda15e] hover:text-[#dda15e] dark:hover:text-[#bc6c25] font-bold mb-8 transition-colors text-base group"
         >
           <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" /> Back to Projects
         </Link>
@@ -367,11 +386,11 @@ export default function ProjectDetail() {
         >
           {/* Main Title & Subtitle */}
           <div className="mb-8">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#283618] tracking-tight mb-3">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-black text-[#283618] dark:text-[#fefae0] tracking-tight mb-3">
               {project.title}
             </h1>
             {project.subtitle && (
-              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#bc6c25]">
+              <h2 className="text-xl sm:text-2xl md:text-3xl font-bold text-[#bc6c25] dark:text-[#dda15e]">
                 {project.subtitle}
               </h2>
             )}
@@ -379,7 +398,7 @@ export default function ProjectDetail() {
 
           {/* Hero Thumbnail / Preview Banner */}
           {project.thumbnail && (
-            <div className="mb-10 rounded-3xl overflow-hidden shadow-2xl border border-[#283618]/15 bg-white">
+            <div className="mb-10 rounded-3xl overflow-hidden shadow-2xl border border-[#283618]/15 dark:border-[#dda15e]/20 bg-white dark:bg-[#1c2617]">
               <img 
                 src={project.thumbnail} 
                 alt={project.title} 
@@ -389,16 +408,72 @@ export default function ProjectDetail() {
             </div>
           )}
 
+          {/* Project Metadata Card: Client, Date, Service, Website */}
+          <div className="bg-white dark:bg-[#1c2617] rounded-3xl p-6 md:p-8 border border-[#283618]/10 dark:border-[#dda15e]/20 shadow-xl mb-10 transition-colors">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Client */}
+              <div className="flex items-start gap-3">
+                <div className="p-3 rounded-2xl bg-[#606c38]/10 dark:bg-[#dda15e]/15 text-[#606c38] dark:text-[#dda15e]">
+                  <User size={22} />
+                </div>
+                <div>
+                  <span className="text-xs uppercase font-bold text-[#606c38] dark:text-[#a3b18a] tracking-wider block">Client</span>
+                  <span className="font-extrabold text-[#283618] dark:text-[#fefae0] text-sm md:text-base leading-snug">{project.client}</span>
+                </div>
+              </div>
+
+              {/* Date */}
+              <div className="flex items-start gap-3">
+                <div className="p-3 rounded-2xl bg-[#606c38]/10 dark:bg-[#dda15e]/15 text-[#606c38] dark:text-[#dda15e]">
+                  <Calendar size={22} />
+                </div>
+                <div>
+                  <span className="text-xs uppercase font-bold text-[#606c38] dark:text-[#a3b18a] tracking-wider block">Date</span>
+                  <span className="font-extrabold text-[#283618] dark:text-[#fefae0] text-sm md:text-base">{project.date}</span>
+                </div>
+              </div>
+
+              {/* Service Type */}
+              <div className="flex items-start gap-3">
+                <div className="p-3 rounded-2xl bg-[#606c38]/10 dark:bg-[#dda15e]/15 text-[#606c38] dark:text-[#dda15e]">
+                  <Briefcase size={22} />
+                </div>
+                <div>
+                  <span className="text-xs uppercase font-bold text-[#606c38] dark:text-[#a3b18a] tracking-wider block">Service Type</span>
+                  <span className="font-extrabold text-[#283618] dark:text-[#fefae0] text-xs md:text-sm leading-snug">{project.serviceType}</span>
+                </div>
+              </div>
+
+              {/* Website */}
+              <div className="flex items-start gap-3">
+                <div className="p-3 rounded-2xl bg-[#606c38]/10 dark:bg-[#dda15e]/15 text-[#606c38] dark:text-[#dda15e]">
+                  <Globe size={22} />
+                </div>
+                <div>
+                  <span className="text-xs uppercase font-bold text-[#606c38] dark:text-[#a3b18a] tracking-wider block">Website</span>
+                  <a
+                    href={project.website}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-extrabold text-[#dda15e] hover:text-[#bc6c25] text-sm md:text-base inline-flex items-center gap-1.5 hover:underline"
+                  >
+                    Visit Live <ExternalLink size={14} />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
           {/* Stats Bar */}
           {project.stats && (
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-10">
               {project.stats.map((stat, i) => {
                 const IconComponent = stat.icon;
                 return (
-                  <div key={i} className="bg-white rounded-2xl p-5 border border-[#283618]/10 shadow-sm flex flex-col items-center text-center">
+                  <div key={i} className="bg-white dark:bg-[#1c2617] rounded-2xl p-5 border border-[#283618]/10 dark:border-[#dda15e]/15 shadow-sm flex flex-col items-center text-center">
                     <IconComponent className="text-[#dda15e] mb-2" size={26} />
-                    <span className="text-xl md:text-2xl font-black text-[#283618]">{stat.value}</span>
-                    <span className="text-xs font-semibold text-[#606c38] uppercase tracking-wider mt-1">{stat.label}</span>
+                    <span className="text-xl md:text-2xl font-black text-[#283618] dark:text-[#fefae0]">{stat.value}</span>
+                    <span className="text-xs font-semibold text-[#606c38] dark:text-[#a3b18a] uppercase tracking-wider mt-1">{stat.label}</span>
                   </div>
                 );
               })}
@@ -408,7 +483,7 @@ export default function ProjectDetail() {
           {/* Tech Stack Pills */}
           <div className="flex flex-wrap gap-2.5 mb-10">
             {project.tech.map((tech, i) => (
-              <span key={i} className="px-4 py-2 bg-[#283618] text-[#fefae0] font-bold rounded-xl text-sm shadow-sm">
+              <span key={i} className="px-4 py-2 bg-[#283618] dark:bg-[#25331f] text-[#fefae0] border border-transparent dark:border-[#dda15e]/25 font-bold rounded-xl text-sm shadow-sm">
                 {tech}
               </span>
             ))}
@@ -438,11 +513,11 @@ export default function ProjectDetail() {
           )}
 
           {/* Project Detailed Description Card */}
-          <div className="bg-white rounded-3xl p-8 md:p-12 shadow-xl border border-[#283618]/10 mb-12 space-y-8">
+          <div className="bg-white dark:bg-[#1c2617] rounded-3xl p-8 md:p-12 shadow-xl border border-[#283618]/10 dark:border-[#dda15e]/20 mb-12 space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-[#283618] mb-4">Project Overview</h3>
+              <h3 className="text-2xl font-bold text-[#283618] dark:text-[#fefae0] mb-4">Project Overview</h3>
               {project.overview.map((para, i) => (
-                <p key={i} className="text-lg text-gray-700 leading-relaxed mb-4">
+                <p key={i} className="text-lg text-gray-700 dark:text-[#ccd5ae] leading-relaxed mb-4">
                   {para}
                 </p>
               ))}
@@ -464,18 +539,18 @@ export default function ProjectDetail() {
             {/* Architectural Breakdown */}
             {project.architectureSections && (
               <div className="space-y-6 pt-2">
-                <h4 className="text-2xl font-bold text-[#283618] flex items-center gap-2">
+                <h4 className="text-2xl font-bold text-[#283618] dark:text-[#fefae0] flex items-center gap-2">
                   <Layers className="text-[#dda15e]" size={24} />
                   Full-Stack Architecture & Features
                 </h4>
                 <div className="grid md:grid-cols-3 gap-6">
                   {project.architectureSections.map((sec, i) => (
-                    <div key={i} className="bg-[#fefae0]/40 rounded-2xl p-6 border border-[#283618]/10 flex flex-col">
+                    <div key={i} className="bg-[#fefae0]/40 dark:bg-[#151c11] rounded-2xl p-6 border border-[#283618]/10 dark:border-[#dda15e]/15 flex flex-col">
                       <div className="mb-4">
-                        <h5 className="font-black text-[#283618] text-lg mb-1">{sec.title}</h5>
-                        <span className="text-xs font-bold text-[#bc6c25] uppercase tracking-wide block">{sec.subtitle}</span>
+                        <h5 className="font-black text-[#283618] dark:text-[#fefae0] text-lg mb-1">{sec.title}</h5>
+                        <span className="text-xs font-bold text-[#bc6c25] dark:text-[#dda15e] uppercase tracking-wide block">{sec.subtitle}</span>
                       </div>
-                      <ul className="space-y-2.5 text-sm text-gray-700 flex-grow">
+                      <ul className="space-y-2.5 text-sm text-gray-700 dark:text-[#a3b18a] flex-grow">
                         {sec.highlights.map((h, j) => (
                           <li key={j} className="flex items-start gap-2">
                             <span className="w-1.5 h-1.5 rounded-full bg-[#dda15e] mt-1.5 flex-shrink-0" />
@@ -492,15 +567,15 @@ export default function ProjectDetail() {
             {/* Role-Based Access Cards (Wazayefksa) */}
             {project.roles && (
               <div>
-                <h4 className="text-xl font-bold text-[#283618] mb-4 flex items-center gap-2">
+                <h4 className="text-xl font-bold text-[#283618] dark:text-[#fefae0] mb-4 flex items-center gap-2">
                   <ShieldCheck className="text-[#dda15e]" size={22} />
                   Role-Based Access System
                 </h4>
                 <div className="grid md:grid-cols-3 gap-4">
                   {project.roles.map((role, i) => (
-                    <div key={i} className="bg-[#fefae0]/50 rounded-2xl p-5 border border-[#283618]/10">
-                      <h5 className="font-bold text-[#283618] text-base mb-2">{role.title}</h5>
-                      <p className="text-sm text-gray-600 leading-relaxed">{role.desc}</p>
+                    <div key={i} className="bg-[#fefae0]/50 dark:bg-[#151c11] rounded-2xl p-5 border border-[#283618]/10 dark:border-[#dda15e]/15">
+                      <h5 className="font-bold text-[#283618] dark:text-[#fefae0] text-base mb-2">{role.title}</h5>
+                      <p className="text-sm text-gray-600 dark:text-[#a3b18a] leading-relaxed">{role.desc}</p>
                     </div>
                   ))}
                 </div>
@@ -512,8 +587,8 @@ export default function ProjectDetail() {
               <div className="grid md:grid-cols-3 gap-4 pt-2">
                 {project.features.map((feat, i) => (
                   <div key={i} className="border-l-4 border-[#dda15e] pl-4 py-1">
-                    <h5 className="font-bold text-[#283618] text-base mb-1">{feat.title}</h5>
-                    <p className="text-sm text-gray-600 leading-relaxed">{feat.desc}</p>
+                    <h5 className="font-bold text-[#283618] dark:text-[#fefae0] text-base mb-1">{feat.title}</h5>
+                    <p className="text-sm text-gray-600 dark:text-[#a3b18a] leading-relaxed">{feat.desc}</p>
                   </div>
                 ))}
               </div>
@@ -521,7 +596,7 @@ export default function ProjectDetail() {
 
             {/* Traction Highlight Callout */}
             {project.metricsHighlight && (
-              <div className="bg-[#283618] text-[#fefae0] p-6 rounded-2xl flex items-center gap-4 shadow-md">
+              <div className="bg-[#283618] dark:bg-[#11170d] text-[#fefae0] p-6 rounded-2xl flex items-center gap-4 shadow-md border border-white/5">
                 <TrendingUp size={36} className="text-[#dda15e] flex-shrink-0" />
                 <p className="text-base md:text-lg font-medium leading-relaxed">
                   {project.metricsHighlight}
@@ -530,7 +605,7 @@ export default function ProjectDetail() {
             )}
 
             {project.link && project.link !== '#' && (
-              <div className="pt-4 border-t border-gray-100">
+              <div className="pt-4 border-t border-gray-100 dark:border-white/10 flex flex-wrap gap-4">
                 <a 
                   href={project.link}
                   target="_blank"
@@ -547,10 +622,10 @@ export default function ProjectDetail() {
           {project.gallery && project.gallery.length > 0 && (
             <div>
               <div className="mb-6">
-                <h3 className="text-4xl font-bold text-[#283618]" style={{ fontFamily: "'Caveat', cursive" }}>
+                <h3 className="text-4xl font-bold text-[#283618] dark:text-[#fefae0]" style={{ fontFamily: "'Caveat', cursive" }}>
                   Project Gallery & Screenshots
                 </h3>
-                <p className="text-sm text-[#606c38] mt-1">Click on any image to view in full resolution</p>
+                <p className="text-sm text-[#606c38] dark:text-[#a3b18a] mt-1">Click on any image to view in full resolution</p>
               </div>
 
               <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -558,25 +633,25 @@ export default function ProjectDetail() {
                   <div 
                     key={index}
                     onClick={() => setActiveImage(item.src)}
-                    className="group bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-[#283618]/10 cursor-pointer transition-all duration-300 hover:-translate-y-1 flex flex-col"
+                    className="group bg-white dark:bg-[#1c2617] rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-[#283618]/10 dark:border-[#dda15e]/15 cursor-pointer transition-all duration-300 hover:-translate-y-1 flex flex-col"
                   >
-                    <div className="relative w-full h-52 overflow-hidden bg-gray-100">
+                    <div className="relative w-full h-52 overflow-hidden bg-gray-100 dark:bg-black/30">
                       <img 
                         src={item.src} 
                         alt={item.title} 
                         className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       />
-                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors flex items-center justify-center">
+                      <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors flex items-center justify-center">
                         <span className="opacity-0 group-hover:opacity-100 px-3 py-1.5 bg-black/75 text-white text-xs font-bold rounded-lg transition-opacity">
                           Click to Enlarge
                         </span>
                       </div>
                     </div>
                     <div className="p-4 flex flex-col flex-grow">
-                      <h4 className="font-bold text-[#283618] text-sm mb-1 group-hover:text-[#dda15e] transition-colors">
+                      <h4 className="font-bold text-[#283618] dark:text-[#fefae0] text-sm mb-1 group-hover:text-[#dda15e] transition-colors">
                         {item.title}
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-xs text-gray-500 dark:text-[#8d9f78] leading-relaxed">
                         {item.desc}
                       </p>
                     </div>
