@@ -1,0 +1,10 @@
+# robots.txt for https://rayanmeziti.com
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://rayanmeziti.com/sitemap.xml
+
+# LLM & AI Agents Documentation (https://llmstxt.org)
+# Structured developer context for AI crawlers & technical recruiters
+# https://rayanmeziti.com/llms.txt

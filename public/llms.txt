@@ -1,0 +1,38 @@
+# Rayan Meziti — Software Engineer & Full-Stack Web Developer
+
+> Full-Stack Web Developer based in Algeria, specializing in high-performance web applications, scalable distributed backends, modern React & Next.js architectures, and production database design. Open to full-time engineering team roles and freelance contracts.
+
+## Overview
+- **Name:** Rayan Meziti (Meziti Rayane Aymane)
+- **Title:** Full-Stack Web Developer & Software Engineer
+- **Website:** https://rayanmeziti.com/
+- **Email:** contact@rayanmeziti.com
+- **GitHub:** https://github.com/PandaDZ1
+- **LinkedIn:** https://www.linkedin.com/in/rayan-meziti-7029a0260/
+- **Khamsat (Verified Freelance Profile):** https://khamsat.com/user/lp11
+- **Discord:** expiargz
+
+## Core Competencies & Tech Stack
+- **Frontend Engineering:** React, Next.js, JavaScript (ES6+), HTML5 Semantic Architecture, Vanilla CSS, Tailwind CSS, Framer Motion, Responsive UX/UI.
+- **Backend & APIs:** Node.js, Express.js, RESTful API design, WebSocket real-time communication (Socket.io), microservice architecture.
+- **Databases & Storage:** PostgreSQL, MySQL, Redis (caching and pub/sub), Prisma ORM, Cloudflare R2 object storage.
+- **Security & Auth:** JWT RS256 token architectures, OTP authentication, Clerk Auth integration, secure payment flows.
+- **Automation & Systems:** Linux/Bash scripting, automated data collection pipelines, OpenAI GPT integration for automated processing, Git workflow.
+- **Payment Integrations:** Telr Payment Gateway API.
+
+## Featured Case Studies & Production Systems
+- [Bin Aqar Platform](https://rayanmeziti.com/project/binaqar): Full-scale Saudi real estate marketplace and custom CRM delivered in 1.5 months. Engineered with 15 API modules, Telr payment gateway, Socket.io real-time chat, bilingual interface, and affiliate commission management. (Client: Riyad Moussa, April 2026).
+- [Wazayefksa Job Board](https://rayanmeziti.com/project/wazayefksa): Saudi recruitment platform featuring automated job crawlers, automated GPT rewriting pipelines, multi-role admin/employer dashboards, and SEO optimization. (Client: ALSAHLI, KHUZAYYIM ALHUMAIDA K, December 2025).
+- [Algérie Télécom Platform](https://rayanmeziti.com/project/algerietelecom): Centralized software deployment and workstation package distribution platform built for enterprise infrastructure. (Client: Algérie Télécom, June 2026).
+
+## Verified Client Reviews (Khamsat Marketplace)
+- **Khaled S. (5/5 Stars):** "Bless your hands, and God willing this won't be our last collaboration." (Order #1105386)
+- **.Drdm C (5/5 Stars):** "Creative and sophisticated service provider. Highly recommended, delivered the service with bonus gifts on top. Thank you!" (Order #1106874)
+- **Majed A. (5/5 Stars):** "A person of high moral character and truly excellent to work with." (Order #1038684)
+
+## Site Map & Key Endpoints
+- [Portfolio Homepage](https://rayanmeziti.com/): Hero section with interactive 3D shader, About Me, tech stack marquee, case studies, verified client reviews, and direct contact.
+- [Bin Aqar Case Study](https://rayanmeziti.com/project/binaqar): Full architecture breakdown, timeline, metrics, and screenshots.
+- [Wazayefksa Case Study](https://rayanmeziti.com/project/wazayefksa): AI integration, crawling pipeline, and dashboard overview.
+- [Algérie Télécom Case Study](https://rayanmeziti.com/project/algerietelecom): Enterprise deployment architecture and tooling.
+- [Blog](https://rayanmeziti.com/blog): Coming Soon — Deep dives on building automated SaaS platforms and web performance.
