@@ -43,9 +43,6 @@ export default function Services() {
           transition={{ duration: 0.6 }}
           className="text-center mb-20"
         >
-          <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#dda15e] mb-2 block font-mono">
-            Capabilities
-          </span>
           <h2 className="text-6xl font-bold text-[#fefae0] mb-6" style={{ fontFamily: "'Caveat', cursive" }}>
             My Services
           </h2>

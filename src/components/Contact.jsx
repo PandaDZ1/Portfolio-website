@@ -13,9 +13,6 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
           className="text-center mb-6 sm:mb-16 relative"
         >
-          <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#dda15e] mb-2 block font-mono">
-            Get In Touch
-          </span>
           <h2 className="text-6xl font-bold mb-6 text-[#dda15e]" style={{ fontFamily: "'Caveat', cursive" }}>
             Let's Work Together
           </h2>

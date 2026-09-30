@@ -31,10 +31,6 @@ export default function About() {
             transition={{ duration: 0.6 }}
             className="flex-1 text-center lg:text-left"
           >
-            <span className="text-sm font-bold uppercase tracking-[0.25em] text-[#dda15e] mb-3 block font-mono">
-              Background & Skills
-            </span>
-
             {/* Same Row: 'About Me' on left, Profile Picture positioned just above the end of the description */}
             <div className="flex items-center justify-between max-w-2xl mx-auto lg:mx-0 mb-5">
               <h2 className="text-6xl sm:text-7xl font-bold text-[#283618] dark:text-[#fefae0] transition-colors leading-none" style={{ fontFamily: "'Caveat', cursive" }}>
