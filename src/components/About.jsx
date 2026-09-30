@@ -53,8 +53,13 @@ export default function About() {
                 <div className="w-18 h-18 sm:w-22 sm:h-22 md:w-24 md:h-24 rounded-full p-1 bg-gradient-to-tr from-[#bc6c25] to-[#dda15e] shadow-[0_12px_28px_rgba(221,161,94,0.45)] transform rotate-[6deg] transition-transform duration-300">
                   <div className="w-full h-full rounded-full overflow-hidden bg-white dark:bg-[#1c2617] ring-2 ring-[#dda15e]/80">
                     <img
-                      src="https://avatars.hsoubcdn.com/6a9a01cf4dc83fe69d01fbb445c9d30f?s=256"
-                      alt="Rayan Meziti"
+                      src="/profile.webp"
+                      alt="Rayan Meziti — Full-Stack Web Developer & Software Engineer Headshot"
+                      title="Rayan Meziti — Full-Stack Software Engineer based in Algeria"
+                      width="96"
+                      height="96"
+                      loading="lazy"
+                      decoding="async"
                       className="w-full h-full object-cover object-center scale-110"
                     />
                   </div>

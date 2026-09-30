@@ -24,9 +24,9 @@ export default function Blog() {
           Blog
         </h1>
         
-        <div className="inline-block bg-[#283618] dark:bg-[#dda15e] text-[#fefae0] dark:text-[#151c11] px-8 py-3.5 rounded-full text-2xl font-bold mb-8 shadow-2xl transform -rotate-2">
+        <h2 className="inline-block bg-[#283618] dark:bg-[#dda15e] text-[#fefae0] dark:text-[#151c11] px-8 py-3.5 rounded-full text-2xl font-bold mb-8 shadow-2xl transform -rotate-2">
           Coming Soon
-        </div>
+        </h2>
 
         <p className="text-lg md:text-xl mb-10 text-gray-700 dark:text-[#ccd5ae] leading-relaxed font-sans">
           Currently building an automated SaaS platform. Stay tuned for the launch and engineering breakdowns!

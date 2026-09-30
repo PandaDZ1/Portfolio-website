@@ -96,9 +96,9 @@ export default function Reviews() {
                       {rev.initial}
                     </div>
                     <div>
-                      <h4 className="font-bold text-sm text-[#283618] dark:text-[#fefae0] leading-snug">
+                      <h3 className="font-bold text-sm text-[#283618] dark:text-[#fefae0] leading-snug">
                         {rev.author}
-                      </h4>
+                      </h3>
                       <span className="text-[11px] text-[#dda15e] font-semibold block">
                         Verified Khamsat Review
                       </span>

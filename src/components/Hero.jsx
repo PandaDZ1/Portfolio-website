@@ -27,6 +27,7 @@ export default function Hero() {
               Meziti Rayane Aymane_
             </div>
             <h1 className="col-start-1 row-start-1 text-5xl md:text-7xl lg:text-8xl font-black text-[#1b2812] dark:text-[#fefae0] tracking-tight leading-tight text-center transition-colors">
+              <span className="sr-only">Rayan Meziti — Full-Stack Web Developer & Software Engineer — </span>
               <Typewriter
                 words={['Meziti Rayane Aymane']}
                 loop={1}
@@ -46,7 +47,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.6 }}
         >
           <h2 className="text-xl md:text-2xl text-[#2e3f20] dark:text-[#ccd5ae] font-medium mb-8 max-w-2xl mx-auto transition-colors">
-            Full-Stack Web Developer based in Algeria. Building backends, databases, and modern web interfaces.
+            Full-Stack Web Developer based in Algeria. Building scalable backends, databases, and modern web interfaces.
           </h2>
 
           <div className="flex flex-wrap gap-4 justify-center">

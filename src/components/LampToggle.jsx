@@ -39,8 +39,13 @@ export default function LampToggle({ className = '', showPrompt = true }) {
       {/* Rock-solid Simplistic Sketch Lamp (No jiggling, stays firmly in one place) */}
       <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32 flex items-center justify-center transition-transform duration-200 group-hover:scale-105">
         <img
-          src={isDark ? "/lamp-bw-dim.png" : "/lamp-bw-bright.png"}
-          alt={isDark ? "Simplistic sketch lamp (dimmed)" : "Simplistic sketch lamp (bright)"}
+          src={isDark ? "/lamp-bw-dim.webp" : "/lamp-bw-bright.webp"}
+          alt={isDark ? "Simplistic black and white caricature sketch lamp in dimmed night mode - Click to illuminate" : "Simplistic black and white caricature sketch lamp in bright mode - Click to dim the site"}
+          title={isDark ? "Switch to Bright Mode — Rayan Meziti Portfolio" : "Switch to Dimmed Mode — Rayan Meziti Portfolio"}
+          width="128"
+          height="128"
+          loading="lazy"
+          decoding="async"
           className={`w-full h-full object-contain transition-all duration-300 ${
             isDark 
               ? 'invert-[0.9] brightness-125 opacity-90 drop-shadow-[0_2px_14px_rgba(255,255,255,0.2)]' 

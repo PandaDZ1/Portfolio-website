@@ -33,7 +33,7 @@ const projectData = {
     date: 'Avril 2026',
     website: 'https://binaqar.com/',
     serviceType: 'Real Estate Marketplace & Custom CRM',
-    thumbnail: '/projects/binaqar/homepage.png',
+    thumbnail: '/projects/binaqar/homepage.webp',
     link: 'https://binaqar.com/',
     role: 'Lead Full-Stack Developer & System Architect',
     stats: [
@@ -94,32 +94,32 @@ const projectData = {
     ],
     gallery: [
       {
-        src: '/projects/binaqar/homepage.png',
+        src: '/projects/binaqar/homepage.webp',
         title: 'Main Marketplace Homepage & Search',
         desc: 'Hero search interface with city filters, property type selectors, and bilingual navigation'
       },
       {
-        src: '/projects/binaqar/otp login.png',
+        src: '/projects/binaqar/otp login.webp',
         title: 'Phone OTP Authentication Modal',
         desc: 'Secure mobile number OTP verification with JWT RS256 token rotation'
       },
       {
-        src: '/projects/binaqar/1775868743606.jpg',
+        src: '/projects/binaqar/1775868743606.webp',
         title: 'CRM Admin Panel Dashboard',
         desc: 'Central administration panel with real-time analytics, user moderation, and management tools'
       },
       {
-        src: '/projects/binaqar/Screenshot 2026-09-30 194431.png',
+        src: '/projects/binaqar/Screenshot 2026-09-30 194431.webp',
         title: 'Property Categories & Discovery',
         desc: 'Category showcase and property type browsing across residential and commercial real estate'
       },
       {
-        src: '/projects/binaqar/Screenshot 2026-09-30 194457.png',
+        src: '/projects/binaqar/Screenshot 2026-09-30 194457.webp',
         title: 'Featured Property Listings',
         desc: 'Curated real estate listings with pricing, specifications, and direct WhatsApp contact'
       },
       {
-        src: '/projects/binaqar/Screenshot 2026-09-30 194510.png',
+        src: '/projects/binaqar/Screenshot 2026-09-30 194510.webp',
         title: 'Platform Footer & Navigation',
         desc: 'Footer section with comprehensive site navigation, social channels, and legal links'
       }
@@ -133,7 +133,7 @@ const projectData = {
     date: 'December 2025',
     website: 'https://wazayefksa.com',
     serviceType: 'AI Recruitment Platform & Web Development',
-    thumbnail: '/projects/wazayefksa/Screenshot 2026-07-19 020501.png',
+    thumbnail: '/projects/wazayefksa/Screenshot 2026-07-19 020501.webp',
     link: 'https://wazayefksa.com',
     role: 'Full-Stack Developer & AI Automation Engineer',
     stats: [
@@ -169,47 +169,47 @@ const projectData = {
     metricsHighlight: 'The website generated more than 20,000 visits during its first 30 days after launch, driven by a strong focus on search engine optimization (SEO).',
     gallery: [
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020501.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020501.webp',
         title: 'Homepage & Search Interface',
         desc: 'Hero section with real-time job filters, category tags, and AdSense placement'
       },
       {
-        src: '/projects/wazayefksa/screencapture-crm-wazayefksa-dashboard-2026-07-19-02_09_22.png',
+        src: '/projects/wazayefksa/screencapture-crm-wazayefksa-dashboard-2026-07-19-02_09_22.webp',
         title: 'Admin CRM & Approval Dashboard',
         desc: 'Complete back-office system for moderating listings, users, and content'
       },
       {
-        src: '/projects/wazayefksa/screencapture-wazayefksa-cv-builder-2026-07-19-02_08_52.png',
+        src: '/projects/wazayefksa/screencapture-wazayefksa-cv-builder-2026-07-19-02_08_52.webp',
         title: 'Interactive CV Builder',
         desc: 'Online resume generator helping candidates create professional CVs'
       },
       {
-        src: '/projects/wazayefksa/screencapture-wazayefksa-jobs-saber-product-certification-specialist-2026-07-19-02_06_37.png',
+        src: '/projects/wazayefksa/screencapture-wazayefksa-jobs-saber-product-certification-specialist-2026-07-19-02_06_37.webp',
         title: 'Job Details & Application Portal',
         desc: 'Clean, SEO-optimized vacancy detail view with role requirements and direct apply'
       },
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020618.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020618.webp',
         title: 'Filtered Job Search Results',
         desc: 'Interactive search filters by Saudi city, industry, and keyword'
       },
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020723.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020723.webp',
         title: 'Courses & Educational Hub',
         desc: 'Dedicated directory for professional certifications and career development courses'
       },
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020750.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020750.webp',
         title: 'Career Resources & Blog',
         desc: 'Articles and career guides written and optimized to rank high on search engines'
       },
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020810.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020810.webp',
         title: 'Upcoming Events & Career Fairs',
         desc: 'Curated calendar of Saudi recruitment exhibitions and job events'
       },
       {
-        src: '/projects/wazayefksa/Screenshot 2026-07-19 020836.png',
+        src: '/projects/wazayefksa/Screenshot 2026-07-19 020836.webp',
         title: 'Employer Job Submission Portal',
         desc: 'Intuitive multi-step form for companies to submit new job listings'
       }
@@ -223,7 +223,7 @@ const projectData = {
     date: 'Juin 2026',
     website: 'https://www.algerietelecom.dz/',
     serviceType: 'Centralized Enterprise Software Deployment & System Architecture',
-    thumbnail: '/projects/algerietelecom/photo_2026-05-05_00-41-20.jpg',
+    thumbnail: '/projects/algerietelecom/photo_2026-05-05_00-41-20.webp',
     link: 'https://www.algerietelecom.dz/',
     role: 'Lead System Architect & Full-Stack Developer (Final Year PFE Capstone)',
     stats: [
@@ -278,62 +278,62 @@ const projectData = {
     ],
     gallery: [
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-41-20.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-41-20.webp',
         title: 'Central Admin Dashboard',
         desc: 'Global monitoring interface showing registered client workstations, package catalogs, and deployment stats'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-38-26.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-38-26.webp',
         title: 'Administrative Authentication Portal',
         desc: 'Secure JWT authentication interface for Algérie Télécom system administrators'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-43-01.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-43-01.webp',
         title: 'Software Package Catalog',
         desc: 'Management interface displaying active software packages, versions, architectures, and statuses'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-46-42.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-46-42.webp',
         title: 'New Package Upload & SHA-256 Hashing',
         desc: 'Form to upload ZIP binaries with automatic server-side SHA-256 checksum generation'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-47-05.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-47-05.webp',
         title: 'Package Version History & Metadata',
         desc: 'Detailed view of package versions, changelogs, architecture support, and download records'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-48-29.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-48-29.webp',
         title: 'Deployment Creation Wizard',
         desc: 'Selecting target software versions and choosing target workstation machines for automated rollout'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-50-51.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-50-51.webp',
         title: 'Live Deployment Progress Tracking',
         desc: 'Real-time status monitor displaying in-progress, completed, and failed installations with terminal logs'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-52-34.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-52-34.webp',
         title: 'Client Workstation Fleet Directory',
         desc: 'Catalog of all registered client machines across Algérie Télécom network with active heartbeat timestamps'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_00-58-08.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_00-58-08.webp',
         title: 'Client Workstation Profile & Hardware Info',
         desc: 'Detailed hardware specifications, network configurations, and past deployment records per client'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_01-03-47.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_01-03-47.webp',
         title: 'Client Agent Daemon Terminal Execution',
         desc: 'Autonomous Bash script running on client workstations, querying tasks and executing silent installs'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_01-16-33.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_01-16-33.webp',
         title: 'Silent Package Installation & Verification',
         desc: 'Command-line execution of distributed packages with SHA-256 verification and status reporting'
       },
       {
-        src: '/projects/algerietelecom/photo_2026-05-05_01-17-33.jpg',
+        src: '/projects/algerietelecom/photo_2026-05-05_01-17-33.webp',
         title: 'Deployment Completion Logs',
         desc: 'Terminal output confirming successful silent package installation and report submission to the API'
       }
@@ -399,10 +399,7 @@ export default function ProjectDetail() {
           {/* Hero Thumbnail / Preview Banner */}
           {project.thumbnail && (
             <div className="mb-10 rounded-3xl overflow-hidden shadow-2xl border border-[#283618]/15 dark:border-[#dda15e]/20 bg-white dark:bg-[#1c2617]">
-              <img 
-                src={project.thumbnail} 
-                alt={project.title} 
-                className="w-full h-auto max-h-[480px] object-cover object-top cursor-pointer hover:opacity-95 transition-opacity"
+              <img src={project.thumbnail} alt={`${project.title} — ${project.subtitle || "Full-Stack Architecture Case Study by Rayan Meziti"}`} title={`${project.title} — Full-Stack Architecture Case Study by Rayan Meziti`} width="1024" height="480" loading="eager" decoding="async" className="w-full h-auto max-h-[480px] object-cover object-top cursor-pointer hover:opacity-95 transition-opacity"
                 onClick={() => setActiveImage(project.thumbnail)}
               />
             </div>
@@ -515,7 +512,7 @@ export default function ProjectDetail() {
           {/* Project Detailed Description Card */}
           <div className="bg-white dark:bg-[#1c2617] rounded-3xl p-8 md:p-12 shadow-xl border border-[#283618]/10 dark:border-[#dda15e]/20 mb-12 space-y-8">
             <div>
-              <h3 className="text-2xl font-bold text-[#283618] dark:text-[#fefae0] mb-4">Project Overview</h3>
+              <h2 className="text-2xl font-bold text-[#283618] dark:text-[#fefae0] mb-4">Project Overview & Technical Architecture</h2>
               {project.overview.map((para, i) => (
                 <p key={i} className="text-lg text-gray-700 dark:text-[#ccd5ae] leading-relaxed mb-4">
                   {para}
@@ -622,9 +619,7 @@ export default function ProjectDetail() {
           {project.gallery && project.gallery.length > 0 && (
             <div>
               <div className="mb-6">
-                <h3 className="text-4xl font-bold text-[#283618] dark:text-[#fefae0]" style={{ fontFamily: "'Caveat', cursive" }}>
-                  Project Gallery & Screenshots
-                </h3>
+                <h2 className="text-4xl font-bold text-[#283618] dark:text-[#fefae0]" style={{ fontFamily: "'Caveat', cursive" }}>Project Gallery & Production Screenshots</h2>
                 <p className="text-sm text-[#606c38] dark:text-[#a3b18a] mt-1">Click on any image to view in full resolution</p>
               </div>
 
@@ -636,10 +631,7 @@ export default function ProjectDetail() {
                     className="group bg-white dark:bg-[#1c2617] rounded-2xl overflow-hidden shadow-md hover:shadow-xl border border-[#283618]/10 dark:border-[#dda15e]/15 cursor-pointer transition-all duration-300 hover:-translate-y-1 flex flex-col"
                   >
                     <div className="relative w-full h-52 overflow-hidden bg-gray-100 dark:bg-black/30">
-                      <img 
-                        src={item.src} 
-                        alt={item.title} 
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                      <img src={item.src} alt={`${project.title} — ${item.title}: ${item.desc}`} title={`${project.title} — ${item.title}`} width="400" height="208" loading="lazy" decoding="async" className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-black/0 group-hover:bg-black/25 transition-colors flex items-center justify-center">
                         <span className="opacity-0 group-hover:opacity-100 px-3 py-1.5 bg-black/75 text-white text-xs font-bold rounded-lg transition-opacity">

@@ -8,19 +8,19 @@ const projects = [
     id: 'wazayefksa',
     title: 'Wazayefksa Job Board',
     description: 'AI-powered recruitment platform designed for the Saudi job market with automated job collection, GPT rewriting, and multi-role dashboards.',
-    thumbnail: '/projects/wazayefksa/Screenshot 2026-07-19 020501.png',
+    thumbnail: '/projects/wazayefksa/Screenshot 2026-07-19 020501.webp',
   },
   {
     id: 'binaqar',
     title: 'Binaqar Platform',
     description: 'Full-scale Saudi real estate marketplace featuring Telr payment integration, custom CRM, and affiliate marketing architecture.',
-    thumbnail: '/projects/binaqar/homepage.png',
+    thumbnail: '/projects/binaqar/homepage.webp',
   },
   {
     id: 'algerietelecom',
     title: 'Algérie Télécom Platform',
     description: 'Centralized software deployment and automated distribution platform engineered for Algérie Télécom workstations.',
-    thumbnail: '/projects/algerietelecom/photo_2026-05-05_00-41-20.jpg',
+    thumbnail: '/projects/algerietelecom/photo_2026-05-05_00-41-20.webp',
   }
 ];
 
@@ -55,7 +55,12 @@ export default function Projects() {
                 {project.thumbnail ? (
                   <img
                     src={project.thumbnail}
-                    alt={project.title}
+                    alt={`${project.title} — ${project.description}`}
+                    title={`${project.title} — Full-Stack Web Architecture Case Study by Rayan Meziti`}
+                    width="600"
+                    height="338"
+                    loading="lazy"
+                    decoding="async"
                     className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                 ) : (
